@@ -1,14 +1,18 @@
-import Todo from './Todo'
+import Beer from "./Beer";
 
-const List = ({ todos }) => {
-    return (
-        <div>
-          {todos.map((todo) => 
-            <Todo key={todo.id} todo={todo} />
-          )}  
-        </div>
-    )
-}
+const List = ({ beers }) => {
+  return (
+    <div style={listStyle}>
+      {beers.map((beer) => (
+        <Beer key={beer.id} beer={beer} />
+      ))}
+    </div>
+  );
+};
+const listStyle = {
+  // fontSize: "40px",
+  // textDecoration: "underline",
+  color: "purple",
+};
 
-export default List
-
+export default List;

@@ -11,6 +11,7 @@ const Header = (props) => {
 const headerStyle = {
   fontSize: "40px",
   textDecoration: "underline",
+  color: "brown",
 };
 
 export default Header;
